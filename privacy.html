@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi - JernihUp</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="wrap">
+  <a class="logo" href="./"><i></i>JernihUp</a>
+  <nav><a href="./">Beranda</a><a href="terms.html">Ketentuan Layanan</a><a href="privacy.html">Kebijakan Privasi</a><a href="#english">English</a></nav>
+
+  <h1>Kebijakan Privasi</h1>
+  <p class="meta">Berlaku sejak 23 November 2026</p>
+
+  <p>JernihUp adalah web untuk konten kreator yang menyiapkan video agar tetap jernih saat diunggah ke TikTok, membuat
+  caption dengan bantuan AI, dan mengirim video ke akun TikTok pengguna atas permintaan pengguna sendiri.
+  Halaman ini menjelaskan data apa yang kami kumpulkan, untuk apa, dan bagaimana kamu bisa menghapusnya.</p>
+
+  <h2>1. Data yang kami simpan</h2>
+  <ul>
+    <li><b>Akun JernihUp</b>: nama, alamat email, dan sandi dalam bentuk hash (sandi asli tidak pernah disimpan).</li>
+    <li><b>Kode verifikasi email</b>: disimpan sementara dalam bentuk hash, kedaluwarsa dalam 10 menit.</li>
+    <li><b>Riwayat penggunaan</b>: nama file video, ukuran, resolusi, durasi, setelan render, caption, dan status kiriman ke TikTok.</li>
+    <li><b>Koneksi TikTok</b> (hanya jika kamu menautkan akun): token akses dan token refresh dari TikTok, open ID, dan nama tampilan TikTok-mu.</li>
+  </ul>
+
+  <h2>2. Data yang tidak kami simpan</h2>
+  <ul>
+    <li><b>File video</b>. Render dilakukan di browser perangkatmu. Video tidak disimpan di server kami. Saat dikirim ke TikTok,
+    video diunggah langsung dari browser ke TikTok, atau diteruskan per potongan lewat Google Apps Script tanpa disimpan.</li>
+    <li>Sandi akun TikTok-mu. Login TikTok dilakukan di halaman resmi TikTok; kami hanya menerima token dari TikTok.</li>
+  </ul>
+
+  <h2>3. Data TikTok yang kami gunakan</h2>
+  <p>Dengan izin yang kamu berikan di halaman login TikTok, JernihUp menggunakan:</p>
+  <ul>
+    <li><b>user.info.basic</b>: membaca nama tampilan dan foto profil untuk menunjukkan akun mana yang tertaut.</li>
+    <li><b>video.upload</b>: mengirim video yang kamu pilih ke kotak masuk/draf TikTok-mu, hanya saat kamu menekan tombol kirim.</li>
+    <li><b>video.publish</b> (jika diaktifkan): memposting video dengan caption dan setelan privasi yang kamu pilih, hanya saat kamu menekan tombol kirim.</li>
+  </ul>
+  <p>Kami tidak membaca video, komentar, pengikut, atau pesan di akun TikTok-mu, dan tidak pernah memposting tanpa tindakanmu.</p>
+
+  <h2>4. Pihak ketiga yang memproses data</h2>
+  <ul>
+    <li><b>Google</b> (Google Apps Script, Google Sheets, Gmail): menjalankan web, menyimpan data akun dan riwayat, serta mengirim email kode verifikasi.</li>
+    <li><b>Anthropic</b> (Claude API): menerima beberapa cuplikan gambar dari video dan ringkasan yang kamu tulis untuk membuat caption dan hashtag. Suara video tidak dikirim.</li>
+    <li><b>TikTok</b>: login dan penerimaan video sesuai izin di atas.</li>
+    <li><b>jsDelivr</b> dan <b>Google Fonts</b>: menyediakan mesin render dan huruf yang dimuat browser.</li>
+  </ul>
+  <p>Kami tidak menjual data pribadi dan tidak memakainya untuk iklan.</p>
+
+  <h2>5. Penyimpanan di browser</h2>
+  <p>JernihUp menyimpan token sesi login di penyimpanan lokal browser agar kamu tidak perlu masuk ulang. Token berlaku 7 hari dan
+  terhapus saat kamu menekan Keluar.</p>
+
+  <h2>6. Lama penyimpanan dan penghapusan</h2>
+  <ul>
+    <li>Kamu bisa memutus koneksi TikTok kapan saja lewat tombol <b>Putuskan</b> di JernihUp; token TikTok langsung dihapus.
+    Kamu juga bisa mencabut akses dari pengaturan aplikasi tertaut di TikTok.</li>
+    <li>Untuk menghapus akun dan seluruh riwayat, ajukan permintaan lewat halaman kontak di bawah. Data dihapus paling lambat 30 hari.</li>
+  </ul>
+
+  <h2>7. Keamanan</h2>
+  <p>Sandi dan kode verifikasi disimpan dalam bentuk hash. Kunci rahasia layanan (API key, client secret, token) disimpan di penyimpanan
+  rahasia Google Apps Script, bukan di lembar data. Tidak ada sistem yang sepenuhnya aman, tetapi kami membatasi data yang disimpan seminimal mungkin.</p>
+
+  <h2>8. Anak-anak</h2>
+  <p>JernihUp tidak ditujukan untuk pengguna di bawah 13 tahun atau di bawah batas usia minimum TikTok di negaramu.</p>
+
+  <h2>9. Perubahan dan kontak</h2>
+  <p>Kebijakan ini dapat diperbarui; tanggal berlaku di atas akan diubah. Pertanyaan atau permintaan penghapusan data:
+  <a href="https://github.com/BintangPPLG/JernihUp/issues">github.com/BintangPPLG/JernihUp/issues</a>.</p>
+
+  <section class="en" id="english">
+    <h1>Privacy Policy (English)</h1>
+    <p class="meta">Effective 23 November 2026</p>
+    <p>JernihUp helps creators prepare videos so they stay sharp after TikTok's compression, write captions with AI, and send videos
+    to their own TikTok account when they choose to.</p>
+    <h2>What we store</h2>
+    <p>Account name, email and a hashed password; short-lived hashed email verification codes; usage history (file name, size,
+    resolution, duration, render settings, caption, TikTok send status); and, only if you connect TikTok, your TikTok access and
+    refresh tokens, open ID and display name.</p>
+    <h2>What we do not store</h2>
+    <p>Video files are rendered in your browser and are not stored on our servers. When sent to TikTok they are uploaded directly
+    from your browser, or relayed in chunks through Google Apps Script without being stored. We never see your TikTok password.</p>
+    <h2>TikTok data use</h2>
+    <p><b>user.info.basic</b> to show which account is connected; <b>video.upload</b> to send the video you select to your TikTok
+    inbox/drafts; <b>video.publish</b> (if enabled) to post with the caption and privacy you choose. We only act when you press send.</p>
+    <h2>Processors</h2>
+    <p>Google (Apps Script, Sheets, Gmail), Anthropic (Claude API receives a few still frames and your notes to write captions; no
+    audio), TikTok (login and upload), jsDelivr and Google Fonts (assets). We do not sell personal data.</p>
+    <h2>Retention and deletion</h2>
+    <p>Disconnect TikTok anytime in JernihUp to delete its tokens, or revoke access in TikTok. To delete your account and history,
+    open a request at <a href="https://github.com/BintangPPLG/JernihUp/issues">github.com/BintangPPLG/JernihUp/issues</a>;
+    we delete it within 30 days. JernihUp is not intended for users under 13.</p>
+  </section>
+
+  <footer>JernihUp, proyek PKL. Tidak berafiliasi dengan TikTok atau ByteDance.</footer>
+</div>
+</body>
+</html>
